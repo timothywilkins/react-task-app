@@ -1,3 +1,152 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+
+.timer-display {
+  font-family: 'alarm clock', sans-serif;
+  font-size:30px;
+  background-color: black;
+  color: green;
+}
+.tack-board-container {
+  width:80%;
+  height:400px;
+  margin: 0 auto;
+  background-color:#c48a47;
+  flex-flow:wrap
+}
+.desk-container {
+  position: relative;
+  margin: 0 auto;
+  width: 97%;
+}
+
+.desk-items {
+  position: relative;
+  display:flex;
+  justify-content: space-around;
+  top: 24px;
+}
+
+.timer {
+  background-color:grey;
+  width: 150px;
+}
+
+.button {
+  top: -7px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: top 0.08s ease-in-out;
+  cursor: pointer;
+}
+.button:active {
+  top: -2px;
+}
+.button:focus {
+  top: -7px;
+}
+.button-start-resume {
+  z-index: 1;
+  display: inline-block;
+  background-color: black;
+  width: 30px;
+  height: 10px;
+}
+.button-reset {
+  display: inline-block;
+  background-color: red;
+  width: 30px;
+  height: 10px;
+}
+
+.postits {
+  width:60px;
+}
+.postits img {
+  width:100%;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin-bottom: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.post-it {
+  overflow-wrap: break-word;
+  width:60px;
+ height:50px;
+ position:relative;
+ background:#ffa;
+ overflow:hidden;
+ margin:30px auto;
+ padding:20px;
+ font-family: 'Permanent Marker', cursive;
+ line-height:1.7em;
+ font-size:14px;
+ color:#130d6b;
+}
+
+.post-it li {
+  cursor:pointer; 
+}
+
+
+.done {
+  text-decoration:line-through; 
+}
+
+h1 {
+  font-size:25px; 
+ position:relative;
+}
+
+.corner-top-both-bevel {
+  /* border-style: solid;
+  height: 0;
+  width: 100%;
+  border-color: transparent transparent brown transparent;
+  border-width: 0 100px 100px 100px; */
+
+  border-style: solid;
+  margin: 0 auto;
+  height: 0;
+  width: 78%;
+  max-width:670px;
+  border-color: transparent transparent brown transparent;
+  border-width: 0 40px 40px 40px;
 }
