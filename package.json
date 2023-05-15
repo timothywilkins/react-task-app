@@ -1,5 +1,5 @@
 {
-  "homepage": "http://{github-username}.github.io/{repo-name}",
+  "homepage": "http://timothywilkins.github.io/react-task-app",
   "name": "react-task-app",
   "version": "0.1.0",
   "private": true,
